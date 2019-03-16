@@ -8,14 +8,14 @@ var emoji = "´<a:AppJedi:528276151521771522>´"
 var emoji = "´<a:discomapez:528286173878026251>´"
 var emoji = "´<a:Coin:546720303695527947>´"
 
-client.login('NTQxNjU1OTgwMDk0NzgzNTEw.DzyBWg.dkQMs5miuB6A9jIsJHWKWIUEPvQ');
+client.login(process.env.TOKEN');
 
 client.on("guildMemberAdd", member => {
   let guild = member.guild;
   guild.defaultChannel.sendMessage(`**[+]** ***${member.user} a rejoint le serveur***`).catch(console.error);
 });
 
-client.login('NTQxNjU1OTgwMDk0NzgzNTEw.DzyBWg.dkQMs5miuB6A9jIsJHWKWIUEPvQ');
+client.login('process.env.TOKEN');
 
 client.on('message',message =>{
   if (!message.guild) return
